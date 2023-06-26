@@ -1,0 +1,49 @@
+# Social Network App
+
+This is a Django-based social network application that allows users to create posts, like/unlike posts, and interact with other users.
+
+## Technologies Used
+
+- Django: A high-level Python web framework used for rapid development and clean design.
+- Django REST Framework: A powerful toolkit for building Web APIs with Django, providing serializers, views, and authentication support.
+- PostgreSQL: A robust open-source relational database management system used for storing application data.
+- Django Simple JWT: A JSON Web Token (JWT) library for Django used for user authentication and token-based access control.
+
+## Third-Party Apps
+
+The following third-party apps were used in this project:
+
+- django-cors-headers: Used to enable Cross-Origin Resource Sharing (CORS) headers for handling cross-origin requests.
+- requests: A versatile HTTP library used for making HTTP requests to external APIs.
+- dateutil: A powerful library for parsing, manipulating, and working with dates and times.
+- holidays: A Python library for determining whether a specific date is a public holiday in a given country.
+- pytest, unittest: Testing frameworks used for writing and running tests to ensure the functionality and reliability of the application.
+
+## Design Choices
+
+- Django: Django was chosen as the web framework for its simplicity, scalability, and rich set of built-in features, such as authentication, ORM, and templating.
+- Django REST Framework: DRF was chosen to build the API endpoints for its comprehensive toolkit, including serializers, views, authentication, and request/response handling.
+- PostgreSQL: PostgreSQL was selected as the database for its reliability, performance, and compatibility with Django.
+- Django Simple JWT: Django Simple JWT was used to implement token-based authentication and secure API access for users.
+- CORS headers: CORS headers were enabled using django-cors-headers to allow cross-origin requests from different domains or origins.
+
+## Installation
+
+To set up and run the project locally, follow these steps:
+
+1. Clone the repository:
+2. Install the dependencies:
+`pip install -r requirements.txt`
+3. Set up the database:
+`python manage.py migrate`
+4. Start the development server:
+`python manage.py runserver`
+5. Access the application in your web browser at `http://localhost:8000`.
+## Testing
+To run the tests for the application, execute the following command:
+`python manage.py test`
+The test suite includes unit tests and integration tests to ensure the functionality and reliability of the application.
+
+
+
+
